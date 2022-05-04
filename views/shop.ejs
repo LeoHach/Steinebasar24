@@ -6,59 +6,112 @@
         <title>Steinebasar24.de</title>
         <link href="/css/style.css" rel="stylesheet" />
     </head>
-    <div class="flex justify-center">
-        <header class="bg-ndarkgray w-9/12 h-14 rounded-b-lg">
-            <div class="grid grid-cols-7 grid-flow-col gap-4 justify-items-center">
-                <div class="col-start-1 col-end-3 flex flex-row space-x-4 p-2">
-                    <button>
-                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.22642 28.871L1 20.6129L7.03774 6.67742M5.22642 28.871L19.717 33M5.22642 28.871L10.0566 20.0968M19.717 33L29.9811 30.9355M19.717 33L22.1321 28.871M29.9811 30.9355L33 24.7419L30.5849 12.871L25.1509 4.6129M29.9811 30.9355L25.1509 10.2903M29.9811 30.9355L22.1321 28.871M25.1509 4.6129L17.9057 1H17M25.1509 4.6129V10.2903M7.03774 6.67742L16.0943 1H17M7.03774 6.67742L11.2642 8.22581M10.0566 20.0968V17.5161M10.0566 20.0968L18.5094 23.1935M18.5094 23.1935L20.3208 9.77419M18.5094 23.1935L22.1321 28.871M20.3208 9.77419L16.6981 5.12903M20.3208 9.77419L25.1509 10.2903M16.6981 5.12903L11.2642 8.22581M16.6981 5.12903L17 1M11.2642 8.22581L10.9623 9.77419L10.6604 11.3226M10.0566 13.9032V14.9355" stroke="#EA580C"/>
-                        </svg>    
-                    </button>
-                    <span class="self-center text-nyellow-200 text-xl font-bold uppercase tracking-wider">Steinebasar24.de</span>
-                </div>
-                <div class="col-start-3 col-span-3 p-2 w-3/4 bg-nblack-700">
-                    <form class="relative">
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-nblack-800" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    <header class="bg-nblack w-full flex flex-row flex-initial items-center justify-between">
+        <div class="flex py-2 pl-4 items-center">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.22642 28.871L1 20.6129L7.03774 6.67742M5.22642 28.871L19.717 33M5.22642 28.871L10.0566 20.0968M19.717 33L29.9811 30.9355M19.717 33L22.1321 28.871M29.9811 30.9355L33 24.7419L30.5849 12.871L25.1509 4.6129M29.9811 30.9355L25.1509 10.2903M29.9811 30.9355L22.1321 28.871M25.1509 4.6129L17.9057 1H17M25.1509 4.6129V10.2903M7.03774 6.67742L16.0943 1H17M7.03774 6.67742L11.2642 8.22581M10.0566 20.0968V17.5161M10.0566 20.0968L18.5094 23.1935M18.5094 23.1935L20.3208 9.77419M18.5094 23.1935L22.1321 28.871M20.3208 9.77419L16.6981 5.12903M20.3208 9.77419L25.1509 10.2903M16.6981 5.12903L11.2642 8.22581M16.6981 5.12903L17 1M11.2642 8.22581L10.9623 9.77419L10.6604 11.3226M10.0566 13.9032V14.9355" stroke="#F6F4D2"/>
+            </svg>
+             <span class="text-nlightgreen-300 text-xl font-bold uppercase tracking-wider pl-3">
+                Steinebasar24
+            </span>    
+        </div>
+
+        <div class="relative invisible md:visible">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center focus:stroke-nblack">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-nlightgreen-300" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+            <input autocomplete="off" class="block w-96 pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-nred-600 text-nblack placeholder-nlightgreen-300 focus:outline-none focus:bg-nlightgreen-300 focus:text-nblack sm:text-sm transition duration-300 ease-in-out " placeholder="Produkt-Suche  " type="search"/>
+        </div> 
+
+        <div class="flex flex-row py-2 pl-6 pr-4 space-x-8">
+             <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-nlightgreen-300 hover:stroke-norange-400 invisible md:visible" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+             </div>
+             <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-nlightgreen-300 hover:stroke-norange-400 invisible md:visible" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-nlightgreen-300 hover:stroke-norange-400 invisible md:visible" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-nlightgreen-300 hover:stroke-norange-400 visible md:invisible" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </div>
+        </div>
+    </header>
+    <body class="bg-nmint">
+            <div class="w-64 h-fit bg-nblack rounded-br-lg">
+                <!--<div class="px-6 pt-2">
+                    <div class="flex items-center justify-end">
+                        <button class="flex items-center justify-center p-0.05 rounded bg-nred-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-nlightgreen-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
                             </svg>
-                        </div>
-                        <input id="search" autocomplete="off" class="block w-3/4 pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-nblack-700 text-nyellow-200 placeholder-nyellow-200 focus:outline-none focus:bg-nyellow-200 focus:text-nblack-800 sm:text-sm transition duration-300 ease-in-out" placeholder="Suche" type="search" />
-                    </form>
-                </div>
-                <div class="col-start-6 col-end-7 p-2">
-                    <button>
-                        <svg width="29" height="33" viewBox="0 0 29 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M25.6296 6.46594H3.07407L1 32.3333H28L25.6296 6.46594Z" stroke="black"/>
-                            <path d="M7.85187 6.46594V10.6089" stroke="black"/>
-                            <path d="M21.3333 6.43109V10.5741" stroke="black"/>
-                            <path d="M7.66669 6.46593C9.14817 1.90519 11 1 14.5185 1C18.0371 1 20.056 2.42713 21.2222 6.46593" stroke="black"/>
-                        </svg>
-                            
-                    </button>
-                </div>
-                <div class="col-start-7 col-end-8 p-2">
-                    <button>
-                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_33_10)">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.000427246 33H31.9995C31.9348 23.4413 24.7964 15.7143 16 15.7143C7.20357 15.7143 0.0650897 23.4413 0.000427246 33Z" fill="black"/>
-                                <path d="M15.8797 15.7143C19.8661 15.7143 23.0977 12.1965 23.0977 7.85714C23.0977 3.51776 19.8661 0 15.8797 0C11.8932 0 8.66162 3.51776 8.66162 7.85714C8.66162 12.1965 11.8932 15.7143 15.8797 15.7143Z" fill="black"/>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_33_10">
-                                    <rect width="32" height="33" fill="white"/>
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        
-                    </button>
+                        </button>
+                    </div>
+                </div>-->
+                
+                <div class="px-6 pt-4 text-nlightgreen-300">
+                    <ul class="flex flex-col space-y-2">
+                        <li>
+                            <div class="relative text-xl font-bold uppercase tracking-wider flex justify-between items-center">
+                                <div class="flex items-center w-full">
+                                    <div class="absolute inset-y-0 left-0 pl-2 flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-nlightgreen-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                        </svg>
+                                    </div>
+                                    <button class="inline-block w-full py-2 pr-8 rounded cursor-default">Produkte</button>
+                                </div>
+                                
+                            </div>
+                            <div class="pt-2 pl-4 pb-10">
+                                <ul class="flex flex-col border-l border-nlightgreen-300">
+                                    <li class="hover:bg-nred-600 cursor-default">
+                                        <button class="inline-block w-full pr-24 py-2 text-md rounded hover:bg-nred-600">
+                                            Granit
+                                        </button>
+                                    </li>
+                                    <li class="hover:bg-nred-600 cursor-default">
+                                        <button class="inline-block w-full pr-24 py-2 text-md rounded hover:bg-nred-600">
+                                            Basalt
+                                        </button>
+                                    </li>
+                                    <li class="hover:bg-nred-600 cursor-default">
+                                        <button class="inline-block w-full pr-20 py-2 text-md rounded hover:bg-nred-600">
+                                            Marmor
+                                        </button>
+                                    </li>
+                                    <li class="hover:bg-nred-600 cursor-default">
+                                        <button class="inline-block w-full pr-20 py-2 text-md rounded hover:bg-nred-600">
+                                            Schiefer
+                                        </button>
+                                    </li>
+                                    <li class="hover:bg-nred-600 cursor-default">
+                                        <button class="inline-block w-full pr-20 py-2 text-md rounded hover:bg-nred-600">
+                                            Kalkstein
+                                        </button>
+                                    </li>
+                                    <li class="hover:bg-nred-600 cursor-default">
+                                        <button class="inline-block w-full pr-20 py-2 text-md rounded hover:bg-nred-600">
+                                            Sandstein
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </header>
-    </div>
-    
-    <body class="bg-norange">
-
     </body>
 </html>

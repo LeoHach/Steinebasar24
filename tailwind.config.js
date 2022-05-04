@@ -5,20 +5,29 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        'nblack': {
-            700: '#371e06',
-            800: '#251605',
-            900: '#120a02',
+        'nblack': '#2A1613',
+        'ndarkorange': {
+            700: '#A44A3F',
+
         },
-        'ndarkorange': '#c57b57',
-        'norange': '#f1ab86',
-        'nyellow': {
-            200: '#f7dba7',
-            500: '#cd8c13',
+
+        'norange': {
+          400: '#F19C79',
+          700: '#B94513',
+          900: '#6E2A0C'
         },
-        'ndarkgray': '#9cafb7',
-        'ngray': '#a5b6be',
-        'nblue': '#44b8e9',
+
+        'nred': {
+          600: '#703B33',
+        },
+
+        'nlightgreen': {
+          200:'#FCFBEE',
+          300:'#F6F4D2'
+        },
+        'ngreen': '#D4E09B',
+        'nmint': '#CBDFBD'
+
       },  
     },
   },
