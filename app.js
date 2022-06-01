@@ -1,13 +1,18 @@
 const express = require('express');
 const createError = require('http-errors');
-const indexRouter = require('./routes/shop');
-const productRouter = require('./routes/admin');
+const shopRouter = require('./routes/shop');
+const adminRouter = require('./routes/admin');
+const profileRouter = require('./routes/profile');
+const checkoutRouter = require('./routes/checkout');
+
 const cookieParser = require('cookie-parser');
 const app = express();
 const port = 3000;
 
-app.use('/', indexRouter);
-app.use('/admin', productRouter);
+app.use('/', shopRouter);
+app.use('/admin', adminRouter);
+app.use('/profile', profileRouter);
+app.use('/checkout', checkoutRouter);
 
 app.use(express.static('public'));
 
