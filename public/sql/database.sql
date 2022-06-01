@@ -4,22 +4,11 @@ CREATE TABLE IF NOT EXISTS products(
     Price FLOAT, 
     Quantity SMALLINT, 
     Type VARCHAR(255), 
-    PRIMARY KEY (Product_ID)
-);
-
-CREATE TABLE IF NOT EXISTS descriptions(
-    Description_ID INT AUTO_INCREMENT NOT NULL,
-    Product_ID INT NOT NULL,
     Description VARCHAR(255),
-    PRIMARY KEY (Description_ID)
-);
-
-CREATE TABLE IF NOT EXISTS pictures(
-    Picture_ID INT AUTO_INCREMENT NOT Null,
-    Product_ID INT NOT NULL,
-    Picture BLOB NOT NULL,
-    PRIMARY KEY (Picture_ID)
-);
+    Picture VARCHAR(255) NOT NULL,
+    Rating FLOAT DEFAULT 0.0,
+    PRIMARY KEY (Product_ID)
+) CHARACTER SET UTF8;
 
 CREATE TABLE IF NOT EXISTS customers(
     Customer_ID INT AUTO_INCREMENT NOT NULL,
@@ -52,9 +41,10 @@ CREATE TABLE IF NOT EXISTS profiles(
     Password VARCHAR(40),
     Role SET('user', 'connected_user', 'admin'),
     KLI BOOLEAN,
+    Picture VARCHAR(255),
     PRIMARY KEY(Profile_ID)
 
-);
+) CHARACTER SET UTF8;
 
 CREATE TABLE IF NOT EXISTS reviews(
     Review_ID INT AUTO_INCREMENT NOT NULL,

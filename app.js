@@ -1,51 +1,40 @@
 const express = require('express');
-const mysql = require('mysql');
-
+const createError = require('http-errors');
+const indexRouter = require('./routes/shop');
+const productRouter = require('./routes/admin');
+const cookieParser = require('cookie-parser');
 const app = express();
+const port = 3000;
+
+app.use('/', indexRouter);
+app.use('/admin', productRouter);
 
 app.use(express.static('public'));
+
+app.use(cookieParser());
+
 app.use('/css', express.static(__dirname + 'public/css'));
 app.use('/img', express.static(__dirname + 'public/img'));
 app.use('/js', express.static(__dirname + 'public/js'));
 
-// create connection
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database : 'steinebasar_db',
-    flags: "-MULTI_STATEMENTS"
-});
-
-// connect.
-db.connect((err) => {
-    if(err) {
-        throw err;
-    }
-    console.log('MySql connection successful.....')
-});
 
 // set views
 app.set('views', './views');
 app.set('view engine', 'ejs');
 
-app.get('', (req, res) => {
-    res.render('shop');
-});
+app.use(function(req, res, next) {
+    next(createError(404));
+  });
+  // error handler
+  app.use(function(err, req, res, next) {
+    // set locals, only providing error in development
+    res.locals.message = err.message;
+    res.locals.error = req.app.get('env') === 'development' ? err : {};
+    // render the error page
+    res.status(err.status || 500);
+    
+  });
 
-app.get('/profile', (req, res) => {
-    res.render('profile');
-});
-
-app.get('/checkout', (req, res) => {
-    res.render('checkout');
-});
-
-app.get('/admin', (req, res) => {
-    res.render('admin');
-});
-
-
-const server = app.listen(3000, () => {
-    console.log(`The application started on port ${server.address().port}`);
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
 });

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Admin-Bereich</title>
+        <link href="/css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="relative flex min-h-screen">
+            <div class="flex flex-col w-screen h-screen">
+                <div class="bg-nblack sticky w-full px-4 py-1 text-nlightgreen-300 items-center justify-center">
+                    <div class="px-4 py-2 basis-8">
+                        <a href="/shop" class="flex items-center space-x-3">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.22642 28.871L1 20.6129L7.03774 6.67742M5.22642 28.871L19.717 33M5.22642 28.871L10.0566 20.0968M19.717 33L29.9811 30.9355M19.717 33L22.1321 28.871M29.9811 30.9355L33 24.7419L30.5849 12.871L25.1509 4.6129M29.9811 30.9355L25.1509 10.2903M29.9811 30.9355L22.1321 28.871M25.1509 4.6129L17.9057 1H17M25.1509 4.6129V10.2903M7.03774 6.67742L16.0943 1H17M7.03774 6.67742L11.2642 8.22581M10.0566 20.0968V17.5161M10.0566 20.0968L18.5094 23.1935M18.5094 23.1935L20.3208 9.77419M18.5094 23.1935L22.1321 28.871M20.3208 9.77419L16.6981 5.12903M20.3208 9.77419L25.1509 10.2903M16.6981 5.12903L11.2642 8.22581M16.6981 5.12903L17 1M11.2642 8.22581L10.9623 9.77419L10.6604 11.3226M10.0566 13.9032V14.9355" stroke="#F6F4D2"/>
+                            </svg>
+                            <span class="text-xl font-bold uppercase tracking-wider">Steinebasar24 </span>   
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-nmint w-full h-full flex">
+                    <div class="bg-nblack flex justify-center items-center max-w-lg">
+                        <form class="flex flex-col" action="/admin/createProduct" method="post"  enctype=multipart/form-data>
+                            <span class="text-nlightgreen-300 text-xl font-bold uppercase tracking-wider">Produkt-Name</span>
+                            <input class="" type="text" id="name" name="name" required />
+                            <span class="text-nlightgreen-300 text-xl font-bold uppercase tracking-wider">Produkt-Preis</span>
+                            <input class="" type="number" id="price" name="price" required />
+                            <span class="text-nlightgreen-300 text-xl font-bold uppercase tracking-wider">Produkt-Menge</span>
+                            <input class="" type="number" id="quantity" name="quantity" required />
+                            <span class="text-nlightgreen-300 text-xl font-bold uppercase tracking-wider">Produkt-Typ</span>
+                            <input class="" type="text" id="type" name="type" required />
+                            <span class="text-nlightgreen-300 text-xl font-bold uppercase tracking-wider">Produkt-Beschreibung</span>
+                            <input class="" type="text" id="description" name="description" required />
+                            <span class="text-nlightgreen-300 text-xl font-bold uppercase tracking-wider">Produkt-Bild</span>
+                            <input class="" type="file" id="picture" name="picture" accept="image/*" required />
+                            <button type="submit" class="border px-2 py-1 text-nlightgreen-300 border-nlightgreen-300 hover:bg-nblack transition duration-200 ease-in-out">
+                                <span class="font-bold tracking-wider">Produkt erstellen</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
