@@ -9,7 +9,7 @@
     <body>
         <div class="relative flex min-h-screen">
             <div class="flex flex-col w-screen h-screen">
-                <div class="bg-nblack sticky w-full px-4 py-1 text-nlightgreen-300 items-center justify-center">
+                <div class="bg-nblack-700 sticky w-full px-4 py-1 text-nlightgreen-300 items-center justify-center">
                     <div class="px-4 py-2 basis-8">
                         <a href="/shop" class="flex items-center space-x-3">
                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="bg-nmint w-full h-full flex">
-                    <div class="bg-nblack flex justify-center items-center max-w-lg">
+                    <div class="bg-nblack-700 flex justify-center items-center max-w-lg">
                         <form class="flex flex-col" action="/admin/createProduct" method="post"  enctype=multipart/form-data>
                             <span class="text-nlightgreen-300 text-xl font-bold uppercase tracking-wider">Produkt-Name</span>
                             <input class="" type="text" id="name" name="name" required />
@@ -34,7 +34,7 @@
                             <input class="" type="text" id="description" name="description" required />
                             <span class="text-nlightgreen-300 text-xl font-bold uppercase tracking-wider">Produkt-Bild</span>
                             <input class="" type="file" id="picture" name="picture" accept="image/*" required />
-                            <button type="submit" class="border px-2 py-1 text-nlightgreen-300 border-nlightgreen-300 hover:bg-nblack transition duration-200 ease-in-out">
+                            <button type="submit" class="border px-2 py-1 text-nlightgreen-300 border-nlightgreen-300 hover:bg-nblack-700 transition duration-200 ease-in-out">
                                 <span class="font-bold tracking-wider">Produkt erstellen</span>
                             </button>
                         </form>

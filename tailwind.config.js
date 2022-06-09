@@ -5,7 +5,12 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        'nblack': '#2A1613',
+        'nblack': {
+          500: '#62342D',
+          700:'#381D19',
+          800: '#2A1613'
+        },
+
         'ndarkorange': {
             700: '#A44A3F',
 
